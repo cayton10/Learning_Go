@@ -1,2 +1,2 @@
 # Learning_Go
-Repo for all things Go tutorial
+Repo for all of my Go learnings / tutorials I work through.

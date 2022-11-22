@@ -1,0 +1,7 @@
+# This is for ignoring the executables w/ no file extensions
+*
+!/**/
+!*.*
+# Not ideal, bit works
+.DS_Store
+
