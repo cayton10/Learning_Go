@@ -1,4 +1,13 @@
 ### LEARN GO
+
+## My Thoughts
+A simple one function program in the entry point to output ASCII art. I <em>should</em> come up with some clever
+ways to print images. Can probably do this by creating my own packages with their own print designs.
+
+## Learning Pacakge Imports and Module
+Just learning how to import packages and module creation to capitalize on Modules introduced in '20. Negates the need
+for $GOPATH and adding packages / projects to path
+
 # Gopher It
 An effective way to learn something new is by making something! In this project we’re going to incorporate the use of fmt to make ASCII art. One suggestion is to make a gopher:
 

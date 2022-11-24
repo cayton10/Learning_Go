@@ -1,12 +1,15 @@
 package main
 
-import f "fmt"
-
-//import d "./dog"
+import (
+	f "fmt"
+	d "mymodule/dog"
+)
 
 func main() {
+	// Module and package import practice
+	d.PrintDog()
 
-	//d.PrintDog()
+	// Initial tutorial output
 	f.Println("    `.-::::::-.`    ")
 	f.Println(".:-::::::::::::::-:.")
 	f.Println("`_:::    ::    :::_`")
