@@ -1,10 +1,12 @@
 package main
 
-import (
-	f "fmt"
-)
+import f "fmt"
+
+//import d "./dog"
 
 func main() {
+
+	//d.PrintDog()
 	f.Println("    `.-::::::-.`    ")
 	f.Println(".:-::::::::::::::-:.")
 	f.Println("`_:::    ::    :::_`")
