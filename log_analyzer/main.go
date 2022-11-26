@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"flag"
 	"fmt"
 	"log"
 	"os"
@@ -9,7 +10,14 @@ import (
 )
 
 func main() {
-	f, err := os.Open("myapp.log")
+	// Cmd line param region
+	// package for cmd line params = flag
+	path := flag.String("path", "myapp.log", "Path to log under analysis")
+	level := flag.String("level", "ERROR", "Log level to search for. Options are DEBUG, INFO, ERROR, and CRITICAL")
+
+	flag.Parse()
+
+	f, err := os.Open(*path)
 	// Nil -> Empty pointer values. Similar to null
 	if err != nil {
 		log.Fatal(err)
@@ -28,7 +36,7 @@ func main() {
 		if err != nil {
 			break
 		}
-		if strings.Contains(s, "ERROR") {
+		if strings.Contains(s, *level) {
 			fmt.Println(s)
 		}
 	}
